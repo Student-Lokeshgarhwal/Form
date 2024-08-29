@@ -1,0 +1,46 @@
+
+.App {
+  /* font-style: oblique; */
+  font-family:'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
+  font-size: large;
+  /* border: 1px solid black; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+
+.container{
+  /* border: 1px solid rebeccapurple; */
+  background-color: rgb(241, 231, 214);
+  padding: 40px;
+  margin-top: 6%;
+  border-radius: 1%;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+
+
+}
+
+.datacol{
+  overflow: auto;
+  /* border: 1px double yellow; */
+  padding-top:  20px;
+  
+}
+
+
+.headrow{
+text-align: center;
+font-size: 20px;
+}
+
+.btn{
+  width: 100%;
+  margin-top: 4% ;
+
+}
+
+.h1row{
+  display: flex;
+  text-align: center;
+}
