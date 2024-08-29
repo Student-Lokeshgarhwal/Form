@@ -3,8 +3,13 @@ import './App.css'
 import { Container, Row, Col, Table } from 'react-bootstrap';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { } from '@fortawesome/free-brands-svg-icons';
+import { faMailBulk, faMessage, faPhone, faUser, faVoicemail } from '@fortawesome/free-solid-svg-icons'
+import {} from '@fortawesome/free-regular-svg-icons'
 
 function App() {
+
 
 
   let [formData, setformData] = useState({
@@ -115,29 +120,34 @@ function App() {
     <div className='App' >
 
       <Container>
+        
 
-        <ToastContainer autoClose={1000}/>
+        <ToastContainer autoClose={1000} hideProgressBar={true}/>
         <Row className='h1row'>
          <h1> Enquiry form</h1>
         </Row>
-
         <Row>
           <Col lg={6} className='formcol'>
             <form onSubmit={HandleSubmit}>
               {/* {userData.length} */}
               <div className='pb-3'>
-                <label className='form-label'>Name</label>
+              <FontAwesomeIcon icon={faUser} className='fa'/>
+                <label className='form-label' > 
+                 Name</label>
                 <input type='text' onChange={getvalue} name='uname' value={formData.uname} className='form-control' />
               </div>
               <div className='pb-3'>
+              <FontAwesomeIcon icon={faMailBulk} className='fa'/>
                 <label className='form-label'>Email</label>
                 <input type='text' onChange={getvalue} name='uemail' value={formData.uemail} className='form-control' />
               </div>
               <div className='pb-3'>
+              <FontAwesomeIcon icon={faPhone} className='fa'/>
                 <label className='form-label'>Phone no.</label>
                 <input type='number' onChange={getvalue} name='uphone' value={formData.uphone} className='form-control' />
               </div>
               <div className='pb-3'>
+              <FontAwesomeIcon icon={faMessage} className='fa'/>
                 <label className='form-label'>Message</label>
                 <textarea name='umessage' value={formData.umessage} onChange={getvalue} className='form-control' row='3'></textarea>
               </div>
